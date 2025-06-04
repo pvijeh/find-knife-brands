@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "model_used": "gemini-2.5-pro",
+    "model_name": "google/gemini-2.5-pro-preview:online",
+    "timestamp": "2025-05-25T23:31:43.608Z",
+    "total_brands_processed": 10,
+    "successful_searches": 4,
+    "failed_searches": 6,
+    "success_rate": "40.0%",
+    "error_breakdown": {
+      "parse_error": 6
+    },
+    "model_availability": "working",
+    "token_usage": {
+      "total_prompt_tokens": 28963,
+      "total_completion_tokens": 9031,
+      "total_tokens": 37994,
+      "total_cost_credits": 0.31451375000000004,
+      "estimated_cost_usd": 0,
+      "average_tokens_per_brand": 3799,
+      "average_cost_per_brand": 0.03,
+      "total_requests": 10,
+      "per_brand_breakdown": [
+        {
+          "brand_name": "ABKT",
+          "prompt_tokens": 2033,
+          "completion_tokens": 674,
+          "total_tokens": 2707,
+          "cost": 0.02928125
+        },
+        {
+          "brand_name": "5ive Star Gear",
+          "prompt_tokens": 1550,
+          "completion_tokens": 997,
+          "total_tokens": 2547,
+          "cost": 0.0319075
+        },
+        {
+          "brand_name": "5.11 Tactical",
+          "prompt_tokens": 1349,
+          "completion_tokens": 999,
+          "total_tokens": 2348,
+          "cost": 0.023676249999999996
+        },
+        {
+          "brand_name": "Aclim8",
+          "prompt_tokens": 2444,
+          "completion_tokens": 962,
+          "total_tokens": 3406,
+          "cost": 0.03267500000000001
+        },
+        {
+          "brand_name": "Acta Non Verba Knives",
+          "prompt_tokens": 1743,
+          "completion_tokens": 994,
+          "total_tokens": 2737,
+          "cost": 0.03211875
+        },
+        {
+          "brand_name": "Actilam",
+          "prompt_tokens": 2406,
+          "completion_tokens": 993,
+          "total_tokens": 3399,
+          "cost": 0.03293750000000001
+        },
+        {
+          "brand_name": "AGA Campolin",
+          "prompt_tokens": 1521,
+          "completion_tokens": 696,
+          "total_tokens": 2217,
+          "cost": 0.02486125
+        },
+        {
+          "brand_name": "Aiorosu Knives",
+          "prompt_tokens": 9294,
+          "completion_tokens": 994,
+          "total_tokens": 10288,
+          "cost": 0.0415575
+        },
+        {
+          "brand_name": "AKC",
+          "prompt_tokens": 2453,
+          "completion_tokens": 720,
+          "total_tokens": 3173,
+          "cost": 0.030266250000000022
+        },
+        {
+          "brand_name": "Al Mar Knives",
+          "prompt_tokens": 4170,
+          "completion_tokens": 1002,
+          "total_tokens": 5172,
+          "cost": 0.0352325
+        }
+      ]
+    }
+  },
+  "results": [
+    {
+      "brand_name": "ABKT",
+      "website_url": "https://abkt.com/",
+      "description": "ABKT, which stands for American Buffalo Knife & Tool, aims to provide customers with good quality knives for everyday use. They emphasize features like one-handed opening and ball bearing assisted opening, striving to offer these products at a competitive price. [abkt.com](https://abkt.com/about/)",
+      "additional_info": {
+        "founded": null,
+        "location": "American (implied by name)",
+        "specialties": "One-handed opening knives, Ball Bearing Assisted Openers, everyday use knives, Cattleman, Elite, and Roper lines. [abkt.com](https://abkt.com/) [abkt.com](https://abkt.com/about/)"
+      },
+      "search_confidence": "high",
+      "notes": "The official website confirms that ABKT stands for American Buffalo Knife & Tool. The site showcases various knife collections and details their commitment to quality and functionality for everyday use. [abkt.com](https://abkt.com/about/)",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:29:37.900Z",
+      "raw_response": "```json\n{\n  \"brand_name\": \"ABKT\",\n  \"website_url\": \"https://abkt.com/\",\n  \"description\": \"ABKT, which stands for American Buffalo Knife & Tool, aims to provide customers with good quality knives for everyday use. They emphasize features like one-handed opening and ball bearing assisted opening, striving to offer these products at a competitive price. [abkt.com](https://abkt.com/about/)\",\n  \"additional_info\": {\n    \"founded\": null,\n    \"location\": \"American (implied by name)\",\n    \"specialties\": \"One-handed opening knives, Ball Bearing Assisted Openers, everyday use knives, Cattleman, Elite, and Roper lines. [abkt.com](https://abkt.com/) [abkt.com](https://abkt.com/about/)\"\n  },\n  \"search_confidence\": \"high\",\n  \"notes\": \"The official website confirms that ABKT stands for American Buffalo Knife & Tool. The site showcases various knife collections and details their commitment to quality and functionality for everyday use. [abkt.com](https://abkt.com/about/)\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 2033,
+        "completion_tokens": 674,
+        "total_tokens": 2707,
+        "cost": 0.02928125
+      }
+    },
+    {
+      "brand_name": "5ive Star Gear",
+      "website_url": null,
+      "description": "\nknife/blade brand\". The search results confirm 5ive Star Gear sells \"personal equipment\" and \"survival gear\".\n\nThe prompt asks to \"make sure that the website is for a knife or blade brand\".```json\n{\n...",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": null
+      },
+      "search_confidence": "low",
+      "notes": "Could not parse structured response from model",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:29:54.617Z",
+      "raw_response": "\nknife/blade brand\". The search results confirm 5ive Star Gear sells \"personal equipment\" and \"survival gear\".\n\nThe prompt asks to \"make sure that the website is for a knife or blade brand\".```json\n{\n  \"brand_name\": \"5ive Star Gear\",\n  \"website_url\": \"https://www.5ivestargear.com",
+      "error_type": "parse_error",
+      "success": false,
+      "token_usage": {
+        "prompt_tokens": 1550,
+        "completion_tokens": 997,
+        "total_tokens": 2547,
+        "cost": 0.0319075
+      }
+    },
+    {
+      "brand_name": "5.11 Tactical",
+      "website_url": null,
+      "description": "\n our women’s collection\". This doesn't give a founding year for the brand itself, but a key development year. The original 5.11 pants were created earlier by\n the brand itself, but a key development ...",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": null
+      },
+      "search_confidence": "low",
+      "notes": "Could not parse structured response from model",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:30:09.929Z",
+      "raw_response": "\n our women’s collection\". This doesn't give a founding year for the brand itself, but a key development year. The original 5.11 pants were created earlier by\n the brand itself, but a key development year. The original 5.11 pants were",
+      "error_type": "parse_error",
+      "success": false,
+      "token_usage": {
+        "prompt_tokens": 1349,
+        "completion_tokens": 999,
+        "total_tokens": 2348,
+        "cost": 0.023676249999999996
+      }
+    },
+    {
+      "brand_name": "Aclim8",
+      "website_url": "https://aclim8.com/",
+      "description": "Aclim8 is a brand that designs and manufactures multi-tools for outdoor adventurers and survival situations. Their products, like the COMBAR, often integrate several tools including blades such as axes, knives, and saws, designed for durability and versatility in the outdoors. [aclim8.com](https://aclim8.com/)",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": "Outdoor multi-tools, survival tools, COMBAR (integrating hatchet, spade, hammer, knife, saw). [bladehq.com](https://www.bladehq.com/item--Aclim8-COMBAR-Pro-Titanium-6-in-1--138895)"
+      },
+      "search_confidence": "high",
+      "notes": "The website aclim8.com appears to be the official brand website, featuring their products and a shop. Retailers like BladeHQ also confirm Aclim8 as the brand for the COMBAR multi-tool. [bladehq.com](https://www.bladehq.com/item--Aclim8-COMBAR-Pro-Titanium-6-in-1--138895)",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:30:21.994Z",
+      "raw_response": "```json\n{\n  \"brand_name\": \"Aclim8\",\n  \"website_url\": \"https://aclim8.com/\",\n  \"description\": \"Aclim8 is a brand that designs and manufactures multi-tools for outdoor adventurers and survival situations. Their products, like the COMBAR, often integrate several tools including blades such as axes, knives, and saws, designed for durability and versatility in the outdoors. [aclim8.com](https://aclim8.com/)\",\n  \"additional_info\": {\n    \"founded\": null,\n    \"location\": null,\n    \"specialties\": \"Outdoor multi-tools, survival tools, COMBAR (integrating hatchet, spade, hammer, knife, saw). [bladehq.com](https://www.bladehq.com/item--Aclim8-COMBAR-Pro-Titanium-6-in-1--138895)\"\n  },\n  \"search_confidence\": \"high\",\n  \"notes\": \"The website aclim8.com appears to be the official brand website, featuring their products and a shop. Retailers like BladeHQ also confirm Aclim8 as the brand for the COMBAR multi-tool. [bladehq.com](https://www.bladehq.com/item--Aclim8-COMBAR-Pro-Titanium-6-in-1--138895)\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 2444,
+        "completion_tokens": 962,
+        "total_tokens": 3406,
+        "cost": 0.03267500000000001
+      }
+    },
+    {
+      "brand_name": "Acta Non Verba Knives",
+      "website_url": null,
+      "description": "\n should make sure the description is brief.\n\"Acta Non Verba Knives is a brand specializing in the design and manufacturing of knives. The name 'Acta```json\n{\n  \"brand_name\": \"Acta Non Verba Knives\",\n...",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": null
+      },
+      "search_confidence": "low",
+      "notes": "Could not parse structured response from model",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:30:38.607Z",
+      "raw_response": "\n should make sure the description is brief.\n\"Acta Non Verba Knives is a brand specializing in the design and manufacturing of knives. The name 'Acta```json\n{\n  \"brand_name\": \"Acta Non Verba Knives\",\n  \"website_url\": \"https://www.anvknives",
+      "error_type": "parse_error",
+      "success": false,
+      "token_usage": {
+        "prompt_tokens": 1743,
+        "completion_tokens": 994,
+        "total_tokens": 2737,
+        "cost": 0.03211875
+      }
+    },
+    {
+      "brand_name": "Actilam",
+      "website_url": null,
+      "description": "\n`search_confidence`: \"Low\" (for finding the official website, as none was found)\n`notes`: \"An official website for Actilam could not be found in the provided search results```json\n{\n  \"brand_name\": \"...",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": null
+      },
+      "search_confidence": "low",
+      "notes": "Could not parse structured response from model",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:30:52.711Z",
+      "raw_response": "\n`search_confidence`: \"Low\" (for finding the official website, as none was found)\n`notes`: \"An official website for Actilam could not be found in the provided search results```json\n{\n  \"brand_name\": \"Actilam\",\n  \"website_url\": null,\n  \"description\": \"Actil",
+      "error_type": "parse_error",
+      "success": false,
+      "token_usage": {
+        "prompt_tokens": 2406,
+        "completion_tokens": 993,
+        "total_tokens": 3399,
+        "cost": 0.03293750000000001
+      }
+    },
+    {
+      "brand_name": "AGA Campolin",
+      "website_url": "https://agacampolin.com",
+      "description": "AGA Campolin is an Italian knife brand known for its traditional stiletto knives and other cutlery, with a history dating back to 1947.",
+      "additional_info": {
+        "founded": "1947",
+        "location": "Originally Maniago, Italy; Headquarters now in Austria [agacampolin.com](https://agacampolin.com/contact.html)",
+        "specialties": "Italian stiletto knives, classic automatic knives [agacampolin.com](https://agacampolin.com/collection.html), [stiletto-italiano.com](http://stiletto-italiano.com/eng/campolinfamily.htm)"
+      },
+      "search_confidence": "high",
+      "notes": "The website agacampolin.com appears to be the official site, showcasing their knife collections and providing company contact information. The brand was founded by Angelo Campolin Sr. [stiletto-italiano.com](http://stiletto-italiano.com/eng/campolinfamily.htm).",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:31:02.286Z",
+      "raw_response": "```json\n{\n  \"brand_name\": \"AGA Campolin\",\n  \"website_url\": \"https://agacampolin.com\",\n  \"description\": \"AGA Campolin is an Italian knife brand known for its traditional stiletto knives and other cutlery, with a history dating back to 1947.\",\n  \"additional_info\": {\n    \"founded\": \"1947\",\n    \"location\": \"Originally Maniago, Italy; Headquarters now in Austria [agacampolin.com](https://agacampolin.com/contact.html)\",\n    \"specialties\": \"Italian stiletto knives, classic automatic knives [agacampolin.com](https://agacampolin.com/collection.html), [stiletto-italiano.com](http://stiletto-italiano.com/eng/campolinfamily.htm)\"\n  },\n  \"search_confidence\": \"high\",\n  \"notes\": \"The website agacampolin.com appears to be the official site, showcasing their knife collections and providing company contact information. The brand was founded by Angelo Campolin Sr. [stiletto-italiano.com](http://stiletto-italiano.com/eng/campolinfamily.htm).\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1521,
+        "completion_tokens": 696,
+        "total_tokens": 2217,
+        "cost": 0.02486125
+      }
+    },
+    {
+      "brand_name": "Aiorosu Knives",
+      "website_url": null,
+      "description": "\n is based on retailer listings.```json\n{\n  \"brand_name\": \"Aiorosu Knives\",\n  \"website_url\": null,\n  \"description\": \"```json\n{\n  \"brand_name\": \"Aiorosu Knives\",\n  \"website_url\": null,\n  \"description\":...",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": null
+      },
+      "search_confidence": "low",
+      "notes": "Could not parse structured response from model",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:31:18.937Z",
+      "raw_response": "\n is based on retailer listings.```json\n{\n  \"brand_name\": \"Aiorosu Knives\",\n  \"website_url\": null,\n  \"description\": \"```json\n{\n  \"brand_name\": \"Aiorosu Knives\",\n  \"website_url\": null,\n  \"description\": \"Aiorosu",
+      "error_type": "parse_error",
+      "success": false,
+      "token_usage": {
+        "prompt_tokens": 9294,
+        "completion_tokens": 994,
+        "total_tokens": 10288,
+        "cost": 0.0415575
+      }
+    },
+    {
+      "brand_name": "AKC",
+      "website_url": "https://akc.it/",
+      "description": "AKC (Automatic Knives Creations) is a brand that specializes in automatic knives, including Italian stiletto knives and OTF (Out The Front) models. [akc.it](https://akc.it/)",
+      "additional_info": {
+        "founded": null,
+        "location": "Italy (based on the .it domain)",
+        "specialties": "Automatic knives, Italian stiletto knives, OTF knives"
+      },
+      "search_confidence": "high",
+      "notes": "The website akc.it is presented as 'AKC - Automatic knives creations' and features their knife collections. [akc.it](https://akc.it/) Other search results like grindworx.com and knifeshop.com are retailer sites selling AKC knives. [grindworx.com](https://www.grindworx.com/cat--All-AKC--249) [knifeshop.com](https://www.knifeshop.com/en/maker/1/akc.html)",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:31:30.894Z",
+      "raw_response": "```json\n{\n  \"brand_name\": \"AKC\",\n  \"website_url\": \"https://akc.it/\",\n  \"description\": \"AKC (Automatic Knives Creations) is a brand that specializes in automatic knives, including Italian stiletto knives and OTF (Out The Front) models. [akc.it](https://akc.it/)\",\n  \"additional_info\": {\n    \"founded\": null,\n    \"location\": \"Italy (based on the .it domain)\",\n    \"specialties\": \"Automatic knives, Italian stiletto knives, OTF knives\"\n  },\n  \"search_confidence\": \"high\",\n  \"notes\": \"The website akc.it is presented as 'AKC - Automatic knives creations' and features their knife collections. [akc.it](https://akc.it/) Other search results like grindworx.com and knifeshop.com are retailer sites selling AKC knives. [grindworx.com](https://www.grindworx.com/cat--All-AKC--249) [knifeshop.com](https://www.knifeshop.com/en/maker/1/akc.html)\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 2453,
+        "completion_tokens": 720,
+        "total_tokens": 3173,
+        "cost": 0.030266250000000022
+      }
+    },
+    {
+      "brand_name": "Al Mar Knives",
+      "website_url": null,
+      "description": "```json\n{\n  \"brand_name\": \"Al Mar Knives\",\n  \"website_url\": \"https://www.almarknives.com/\",\n  \"description\": \"Al Mar Knives® is a brand renowned for its high-quality knife designs. Initially, many of ...",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": null
+      },
+      "search_confidence": "low",
+      "notes": "Could not parse structured response from model",
+      "model_used": "gemini-2.5-pro",
+      "timestamp": "2025-05-25T23:31:43.607Z",
+      "raw_response": "```json\n{\n  \"brand_name\": \"Al Mar Knives\",\n  \"website_url\": \"https://www.almarknives.com/\",\n  \"description\": \"Al Mar Knives® is a brand renowned for its high-quality knife designs. Initially, many of its knives were designed for police and military use, stemming from Al Mar's background as a Green Beret and practitioner of Judo and Kendo. The brand's SERE (Survival-Evasion-Resistance-Escape) knife was notably the first accepted for use by Special Forces Colonel Nick Rowe for the SERE Instructor School. Over time, Al Mar Knives expanded its designs to include hunting/fishing knives, kitchen cutlery, and gentlemen’s gift knives. [almarknives.com](https",
+      "error_type": "parse_error",
+      "success": false,
+      "token_usage": {
+        "prompt_tokens": 4170,
+        "completion_tokens": 1002,
+        "total_tokens": 5172,
+        "cost": 0.0352325
+      }
+    }
+  ]
+}

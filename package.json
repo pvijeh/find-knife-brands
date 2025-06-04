@@ -1,0 +1,41 @@
+{
+  "name": "knife-brand-website-finder",
+  "version": "1.0.0",
+  "description": "A script that uses OpenRouter API to find official websites for knife brands using AI models with internet access",
+  "main": "getBrandWebsite.js",
+  "scripts": {
+    "start": "node getBrandWebsite.js",
+    "setup": "node setup.js",
+    "example": "node example.js",
+    "test": "node getBrandWebsite.js gpt-4o-mini 3 0",
+    "test-claude": "node getBrandWebsite.js claude-3-haiku 3 0",
+    "test-gemini": "node getBrandWebsite.js gemini-1.5-pro 3 0",
+    "force": "node getBrandWebsite.js gpt-4o-mini 10 0 --force",
+    "show": "node getBrandWebsite.js gpt-4o-mini 10 0 --show",
+    "all-models": "node getBrandWebsite.js gpt-4o-mini 10 0 && node getBrandWebsite.js anthropic/claude-sonnet-4 10 0 && node getBrandWebsite.js gemini-2.5-pro 10 0 && node getBrandWebsite.js gemini-2.0-flash-001 10 0 && node getBrandWebsite.js gpt-4o 10 0 && node getBrandWebsite.js qwen-2.5-72b 10 0 && node getBrandWebsite.js llama-3.1-70b 10 0 && node getBrandWebsite.js perplexity/sonar-deep-research 10 0",
+    "all-models-force": "node getBrandWebsite.js gpt-4o-mini 10 0 --force && node getBrandWebsite.js anthropic/claude-sonnet-4 10 0 --force && node getBrandWebsite.js gemini-2.5-pro 10 0 --force && node getBrandWebsite.js gemini-2.0-flash-001 10 0 --force && node getBrandWebsite.js gpt-4o 10 0 --force && node getBrandWebsite.js qwen-2.5-72b 10 0 --force && node getBrandWebsite.js llama-3.1-70b 10 0 --force && node getBrandWebsite.js perplexity/sonar-deep-research 10 0 --force",
+    "help": "node -e \"console.log('Usage: npm start [model] [count] [startIndex] [--force] [--show]\\nAvailable models: gpt-4o, gpt-4o-mini, anthropic/claude-sonnet-4, gemini-2.5-pro, gemini-2.0-flash-001, qwen-2.5-72b, llama-3.1-70b, perplexity/sonar-deep-research\\n\\nFlags:\\n  --force, -f    Force run even if results exist\\n  --show, -s     Show existing results without processing\\n\\nCommands:\\n  npm run setup    - Setup and verify installation\\n  npm run example  - Run example with multiple models\\n  npm test         - Test with 3 brands using gpt-4o-mini\\n  npm run force    - Force rerun with gpt-4o-mini\\n  npm run show     - Show existing gpt-4o-mini results\\n  npm run all-models - Run all 8 models sequentially (10 brands each)')\""
+  },
+  "keywords": [
+    "knife",
+    "brands",
+    "website",
+    "finder",
+    "openrouter",
+    "ai",
+    "web-search"
+  ],
+  "author": "Knife Brand Website Finder",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/knife-brand-finder"
+  }
+} 

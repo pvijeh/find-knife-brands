@@ -1,0 +1,1191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Website Search Results Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .summary-row {
+            background-color: #e8f4f8 !important;
+            font-weight: bold;
+        }
+        .confidence-high {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .confidence-medium {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+        .confidence-low {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .url-found {
+            color: #007bff;
+        }
+        .url-not-found {
+            color: #dc3545;
+            font-style: italic;
+        }
+        .model-name {
+            font-weight: bold;
+            color: #495057;
+        }
+        .description {
+            max-width: 300px;
+            word-wrap: break-word;
+        }
+        .notes {
+            max-width: 250px;
+            word-wrap: break-word;
+            font-size: 0.9em;
+        }
+        .cost {
+            text-align: right;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brand Website Search Results Analysis</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Brand Name</th>
+                    <th>Website URL</th>
+                    <th>Confidence</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Specialties</th>
+                    <th>Notes</th>
+                    <th>Token Cost</th>
+                    <th>Total Tokens</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">American Buffalo Knife & Tool (ABKT) is a knife manufacturer that specializes in folding and fixed blade knives with ball bearing assisted opening mechanisms. They focus on producing reliable, everyday-use knives with features like one-handed opening functionality.</td>
+                    <td>United States</td>
+                    <td>Ball bearing assisted opening knives, folding knives, fixed blade knives, everyday carry (EDC) knives</td>
+                    <td class="notes">The website abkt.com is clearly the official website for American Buffalo Knife & Tool. It contains product catalogs, warranty information, and company details. The brand offers multiple product lines including Cattleman, Elite, and Roper series knives.</td>
+                    <td class="cost">$0.0292</td>
+                    <td class="cost">2159</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://www.5ivestargear.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a tactical and outdoor gear brand owned by ATLANCO®, specializing in military, law enforcement, and public safety equipment including survival gear, tactical accessories, and outdoor equipment.</td>
+                    <td>United States (Atlanta-based)</td>
+                    <td>tactical gear, survival equipment, military and law enforcement supplies, outdoor gear</td>
+                    <td class="notes">While 5ive Star Gear does carry knives and blades as part of their survival and tactical gear lineup, they are primarily a comprehensive tactical/outdoor gear company rather than a specialized knife brand. The website is official and operated by ATLANCO®, which has been in business since 1950.</td>
+                    <td class="cost">$0.0298</td>
+                    <td class="cost">1809</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is primarily a tactical gear and apparel company that serves law enforcement, military, and first responders. While they may carry some knives and blades as part of their tactical equipment lineup, they are not primarily known as a knife or blade brand.</td>
+                    <td>Unknown</td>
+                    <td>Tactical clothing, gear, and accessories for law enforcement, military, and first responders</td>
+                    <td class="notes">Important clarification: 5.11 Tactical is not primarily a knife/blade brand. They are a tactical gear and apparel company that focuses on clothing, bags, accessories, and equipment for professionals in demanding fields. While they may sell some knives or blades as part of their tactical equipment offerings, their core business is tactical apparel and gear, not knife manufacturing.</td>
+                    <td class="cost">$0.0196</td>
+                    <td class="cost">1521</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is an outdoor adventure tool company that specializes in multi-functional survival tools, particularly their flagship COMBAR series. They create compact, lightweight tools that combine multiple functions like hatchets, hammers, knives, saws, and spades into single units designed for outdoor enthusiasts and adventurers.</td>
+                    <td>Unknown</td>
+                    <td>Multi-functional survival tools, COMBAR series (6-in-1 tools), outdoor adventure equipment, titanium and stainless steel construction</td>
+                    <td class="notes">The official website aclim8.com shows their product line including the COMBAR Pro Titanium edition and FoldaXe. The brand focuses on premium outdoor survival tools rather than traditional knives, but their products do include knife components as part of their multi-tools. The website appears to be their official e-commerce platform with direct sales.</td>
+                    <td class="cost">$0.0313</td>
+                    <td class="cost">2674</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives is a knife manufacturer that produces military and tactical knives, including fixed blade knives with various models like the M311, M500 Anthropoid, and P500 series.</td>
+                    <td>Unknown</td>
+                    <td>Military and tactical knives, fixed blade knives with models like M311, M500 Anthropoid DLC with Kydex sheaths, and P500 series</td>
+                    <td class="notes">The website shows professional product listings with detailed specifications, multiple knife models, and appears to be an official e-commerce site rather than a reseller. The brand name 'ACTA NON VERBA' (Latin for 'deeds not words') suggests a focus on practical, functional knife designs.</td>
+                    <td class="cost">$0.0304</td>
+                    <td class="cost">2173</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>Actilam</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Actilam appears to be a knife manufacturer that produces folding knives, including models like the T3 series with various handle materials such as olive wood and black Corian. Their knives feature X50CrMoV15N steel blades and are sold through various knife retailers.</td>
+                    <td>Unknown</td>
+                    <td>Folding knives with premium handle materials like olive wood and Corian, featuring X50CrMoV15N steel blades</td>
+                    <td class="notes">No official website found in search results. Products are available through retailers like knifeworks.com, bladehq.com, and chicagoknifeworks.com. LinkedIn company page exists but doesn't provide website access. The brand appears to be legitimate based on product availability across multiple established knife retailers.</td>
+                    <td class="cost">$0.0314</td>
+                    <td class="cost">2594</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://agacampolin.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is an Italian knife manufacturer specializing in traditional stilettos and artisan knives, founded by Angelo Campolin and continuing the family tradition of knife making from Maniago, Italy.</td>
+                    <td>Originally Maniago, Italy (headquarters moved to Austria)</td>
+                    <td>Traditional Italian stilettos, classic knives, artisan blade craftsmanship</td>
+                    <td class="notes">The official website agacampolin.com shows authentic company information including contact details, product collections, and company history. The brand has deep roots in Maniago's knife-making tradition, with founder Angelo Campolin having worked with Mario Mauro (a major knife manufacturer) in the 1940s-1950s before establishing AGA Campolin. The company headquarters has relocated to Austria but maintains its Italian craftsmanship heritage.</td>
+                    <td class="cost">$0.0244</td>
+                    <td class="cost">1724</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Aiorosu Knives appears to be a knife brand that produces manual folding knives, available through knife retailers</td>
+                    <td>Unknown</td>
+                    <td>Manual folding knives</td>
+                    <td class="notes">Only found retailer listings for this brand, no official website located. The brand appears to be listed on BladeHQ as a manual folding knife manufacturer, but without an official website presence, detailed brand information is limited.</td>
+                    <td class="cost">$0.0539</td>
+                    <td class="cost">10300</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://akc.it/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC (Automatic Knives Creations) is an Italian knife manufacturer specializing in automatic knives, OTF (Out The Front) knives, and Italian stiletto knives.</td>
+                    <td>Italy</td>
+                    <td>Automatic knives, OTF knives, Italian stiletto knives</td>
+                    <td class="notes">The official website is confirmed to be akc.it, which stands for 'Automatic Knives Creations'. The site shows they are an Italian manufacturer with the tagline 'Automatic Knives Creations' and features their knife collections. The search results show this is the official manufacturer website, not a reseller or fan site.</td>
+                    <td class="cost">$0.0305</td>
+                    <td class="cost">2599</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://www.almarknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AL MAR Knives is a premium knife manufacturer known for producing high-quality tactical, military, and everyday carry (EDC) knives. The brand offers various knife series including the SERE line, Ultralight series, and traditional folding knives with premium materials like jigged bone handles.</td>
+                    <td>Unknown</td>
+                    <td>Tactical knives, SERE knives, EDC knives, folding knives, fixed blade knives, premium handle materials</td>
+                    <td class="notes">The website appears to be the official AL MAR Knives website based on the professional design, comprehensive product catalog, official branding, and direct sales functionality. The site features their full product line including SERE 2020 series, Ultralight knives, and traditional designs with premium materials.</td>
+                    <td class="cost">$0.0357</td>
+                    <td class="cost">4197</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">anthropic/claude-sonnet-4:online</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">10/10 found</td>
+                    <td class="confidence-low">100.0%</td>
+                    <td class="description">Total cost: $0.3162</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 3175</td>
+                    <td class="cost">$0.3162</td>
+                    <td class="cost">31750</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abktinc.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">ABKT (American Buffalo Knife & Tool) is a brand that offers a variety of knives and tools, including folding knives, fixed blade knives, and multi-tools.</td>
+                    <td>USA</td>
+                    <td>Knives, Tools</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">387</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://5ive-star-gear.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a brand that offers a wide range of tactical and outdoor gear, including knives, packs, and apparel. They focus on providing durable and functional equipment for military, law enforcement, and outdoor enthusiasts.</td>
+                    <td>USA</td>
+                    <td>Tactical gear, knives, packs, apparel</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">410</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is a brand known for providing tactical gear and apparel, including knives, to law enforcement, military, and public safety professionals, as well as outdoor enthusiasts.</td>
+                    <td>USA</td>
+                    <td>Tactical gear, apparel, knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">407</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>Aclim8</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">I was unable to find an official website for the knife/blade brand "Aclim8". My search did not yield any results for a knife or blade manufacturer with that name.</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">It's possible that "Aclim8" is a product line within a larger brand, a very small or regional brand, or no longer in operation. Further investigation might be needed to determine its status.</td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">422</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives (ANV Knives) is a Czech Republic-based company that designs and manufactures high-quality knives for military, law enforcement, and outdoor enthusiasts. They are known for their robust designs and use of premium materials.</td>
+                    <td>Czech Republic</td>
+                    <td>Tactical knives, outdoor knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">415</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>Actilam</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-medium">medium</td>
+                    <td class="description">I was unable to find an official website for Actilam. Based on search results, Actilam appears to be a knife brand that produces various types of knives, including hunting knives and folding knives. Information about the brand is limited, and they may be a smaller or less prominent manufacturer.</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">While I couldn't find an official website, Actilam knives are available through various online retailers. The lack of an official website makes it difficult to verify detailed information about the brand's history or specific product lines.</td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">441</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://www.agacampolin.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is an Italian knife manufacturer known for producing traditional Italian stiletto knives, particularly switchblades and lever-lock knives. They are one of the oldest and most respected makers of these types of knives.</td>
+                    <td>Italy</td>
+                    <td>Italian stilettos, switchblades, lever-lock knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">408</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">I was unable to find an official website for Aiorosu Knives. Information about the brand is limited, and it's possible they primarily sell through other retailers or platforms.</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">Extensive searching did not reveal an official website. Mentions of the brand appear on various knife retailer sites, but no dedicated brand presence was found.</td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">409</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://www.akcitaly.com/en/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC Italy produces traditional Italian knives, including switchblades, stilettos, and other classic designs. They are known for their craftsmanship and use of quality materials.</td>
+                    <td>Italy</td>
+                    <td>Italian switchblades, stilettos</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">393</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://almarknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Al Mar Knives is a brand known for producing high-quality, precision-made knives with a focus on design and materials. They offer a range of knives, including folding knives, fixed blade knives, and tactical knives.</td>
+                    <td>USA</td>
+                    <td>Tactical knives, folding knives, fixed blade knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0001</td>
+                    <td class="cost">410</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">google/gemini-2.0-flash-001</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">10/10 found</td>
+                    <td class="confidence-low">100.0%</td>
+                    <td class="description">Total cost: $0.0010</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 410</td>
+                    <td class="cost">$0.0010</td>
+                    <td class="cost">4102</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">ABKT, which stands for American Buffalo Knife & Tool, designs and supplies knives intended for everyday use. They emphasize providing quality products, including one-handed opening knives featuring a ball bearing assisted mechanism, at a good value. [abkt.com](https://abkt.com/about/)</td>
+                    <td>American (implied by name)</td>
+                    <td>Ball Bearing Assisted Opening knives, one-handed opening knives, everyday use knives. Their product lines include Cattleman, Elite, and Roper. [abkt.com](https://abkt.com/), [abkt.com](https://abkt.com/product/ab-elite-fixed-grunt-guthook-knives/)</td>
+                    <td class="notes">The website clearly identifies itself as American Buffalo Knife & Tool (ABKT) and showcases their knife products. [abkt.com](https://abkt.com/)</td>
+                    <td class="cost">$0.0292</td>
+                    <td class="cost">2691</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">
+-star-gear/our-company): "Since 1950, ATLANCO® has been one of the leading suppliers... ATLANCO® continues```json
+{
+    "brand_name": "5ive Star Gear",
+    "website_url": "https://www.5ivestargear.co...</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">Could not parse structured response from model</td>
+                    <td class="cost">$0.0319</td>
+                    <td class="cost">2506</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">
+ collection including uniforms, covert clothing, and fitness apparel." (From [511tactical.com](https://www.511tactical.com/company-info/about-51
+[511tactical.com](https://www.511tact...</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">Could not parse structured response from model</td>
+                    <td class="cost">$0.0236</td>
+                    <td class="cost">2282</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is a brand that designs and manufactures multi-tools for outdoor adventurers and survival situations. Their products, like the COMBAR, integrate various tools such as a hatchet, spade, hammer, knife, and saw into a single, robust unit. [aclim8.com](https://aclim8.com/)</td>
+                    <td>Unknown</td>
+                    <td>Outdoor multi-tools, survival tools, COMBAR (which includes axe, spade, hammer, knife, and saw components). [bladehq.com](https://www.bladehq.com/item--Aclim8-COMBAR-Pro-Titanium-6-in-1--138895)</td>
+                    <td class="notes">The official website aclim8.com features their products, including the COMBAR™ FoldaXe, described as having a 'hardened, razor-sharp stainless steel blade'. [aclim8.com](https://aclim8.com/collections/combar-pro-titanium-edition/products/combar-foldaxe) The site also links to their Shopify store for purchases. [aclim8.com](https://aclim8.com/)</td>
+                    <td class="cost">$0.0322</td>
+                    <td class="cost">3346</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives is a brand that manufactures knives. The name is Latin for "Deeds, not words," suggesting a focus on performance and action.</td>
+                    <td>Unknown</td>
+                    <td>Manufacturing knives, potentially with a focus on tactical or military applications given product names like 'M311 Spelter' found in the military section of their website [anvknives.com](https://www.anvknives.com/military/m311spelter/).</td>
+                    <td class="notes">The website [anvknives.com](https://www.anvknives.com/) is consistently presented as the official site for ACTA NON VERBA KNIVES across multiple pages like their gallery [anvknives.com](https://www.anvknives.com/gallery/) and media sections [anvknives.com](https://www.anvknives.com/media/). The site clearly sells and showcases their own branded knives.</td>
+                    <td class="cost">$0.0303</td>
+                    <td class="cost">2706</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>Actilam</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">
+.com](https://www.linkedin.com/company/actilam) for "Actilam" might have a website link. I will check this.
+Accessing the LinkedIn page for Actilam ([```json
+{
+    "brand_name": "Actilam",
+    "websi...</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">Could not parse structured response from model</td>
+                    <td class="cost">$0.0330</td>
+                    <td class="cost">3391</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">```json
+{
+    "brand_name": "AGA Campolin",
+    "website_url": "https://agacampolin.com",
+    "description": "AGA Campolin is an Italian knife brand founded by Angelo Campolin. The company has been pr...</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">Could not parse structured response from model</td>
+                    <td class="cost">$0.0279</td>
+                    <td class="cost">2509</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Aiorosu Knives is a brand that appears to produce manual folding knives.</td>
+                    <td>Unknown</td>
+                    <td>Manual folding knives</td>
+                    <td class="notes">An official website for Aiorosu Knives was not found in the provided search results. The brand is listed on reseller websites like Blade HQ [bladehq.com](https://www.bladehq.com/cat--Aiorosu-Knives--3130), which categorizes them under manual folding knives. No further official brand information or dedicated website was identified.</td>
+                    <td class="cost">$0.0376</td>
+                    <td class="cost">9917</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://akc.it/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC, which stands for Automatic Knives Creations, is a brand that specializes in automatic knives, including Italian stiletto knives and OTF (Out The Front) models.</td>
+                    <td>Italy (implied by .it domain)</td>
+                    <td>Automatic knives, Italian stiletto knives, OTF knives</td>
+                    <td class="notes">The website [akc.it](https://akc.it/) is presented as 'AKC - Automatic Knives Creations' and allows users to 'Discover our knives', indicating it is the official brand website. Other search results like [grindworx.com](https://www.grindworx.com/cat--All-AKC--249) and [knifeshop.com](https://www.knifeshop.com/en/maker/1/akc.html) are retailer sites selling AKC products.</td>
+                    <td class="cost">$0.0301</td>
+                    <td class="cost">3144</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">```json
+{
+    "brand_name": "Al Mar Knives",
+    "website_url": "https://www.almarknives.com/",
+    "description": "Al Mar Knives® is a brand known for producing high-quality fixed and folding knives,...</td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">Could not parse structured response from model</td>
+                    <td class="cost">$0.0342</td>
+                    <td class="cost">4315</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">google/gemini-2.5-pro-preview:online</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">5/10 found</td>
+                    <td class="confidence-low">50.0%</td>
+                    <td class="description">Total cost: $0.3098</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 3681</td>
+                    <td class="cost">$0.3098</td>
+                    <td class="cost">36807</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">American Buffalo Knife & Tool (ABKT) specializes in producing high-quality knives and tools designed for everyday use, featuring innovative designs and reliable functionality.</td>
+                    <td>Unknown</td>
+                    <td>Everyday carry knives, folding knives, fixed blades</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1726</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://www.5ivestargear.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a brand that specializes in outdoor and survival gear, including knives and blades, designed for military, law enforcement, and outdoor enthusiasts.</td>
+                    <td>United States</td>
+                    <td>survival gear, outdoor equipment, military supplies</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1427</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is a brand that specializes in tactical gear, clothing, and accessories designed for law enforcement, military, and outdoor enthusiasts. They focus on creating high-quality products that meet the demanding needs of first responders and outdoor adventurers.</td>
+                    <td>United States</td>
+                    <td>tactical gear, clothing, and accessories</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0123</td>
+                    <td class="cost">1247</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is a brand that specializes in innovative outdoor tools and multi-tools designed for adventurers and outdoor enthusiasts. Their products, such as the COMBAR Pro, combine multiple functionalities into compact designs suitable for various survival situations.</td>
+                    <td>Unknown</td>
+                    <td>multi-tools and outdoor adventure tools</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0204</td>
+                    <td class="cost">2075</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives specializes in premium quality knives designed and manufactured in the Czech Republic.</td>
+                    <td>Czech Republic</td>
+                    <td>premium quality knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1672</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>Actilam</td>
+                    <td class="url-found">http://actilam.fr</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Actilam is a French knife manufacturer known for producing high-quality folding knives, particularly featuring unique materials and designs.</td>
+                    <td>Thiers, France</td>
+                    <td>Folding knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0204</td>
+                    <td class="cost">2022</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://agacampolin.com/collection.html</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is a renowned knife manufacturer based in Maniago, Italy, known for its high-quality artisan knives and stilettos. The brand has a rich tradition of craftsmanship and has been producing knives since 1947.</td>
+                    <td>Italy</td>
+                    <td>artisan knives, stilettos</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0163</td>
+                    <td class="cost">1400</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-found">https://www.bladehq.com/cat--Aiorosu-Knives--3130</td>
+                    <td class="confidence-medium">medium</td>
+                    <td class="description">Aiorosu Knives offers a range of manual folding knives, known for their quality and craftsmanship.</td>
+                    <td>Unknown</td>
+                    <td>manual folding knives</td>
+                    <td class="notes">The URL leads to a reseller site (Blade HQ) that lists Aiorosu Knives, but does not appear to be the official brand website.</td>
+                    <td class="cost">$0.0213</td>
+                    <td class="cost">8504</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://www.akc.it/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC (Automatic Knives Creations) is an Italian brand known for its high-quality automatic knives, including stiletto and OTF (Out The Front) knives.</td>
+                    <td>Italy</td>
+                    <td>Automatic knives, including stiletto and OTF designs</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0204</td>
+                    <td class="cost">1982</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://www.almarknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Al Mar Knives is a brand known for its high-quality knives, including folding and fixed blade designs, often featuring traditional craftsmanship and modern materials.</td>
+                    <td>United States</td>
+                    <td>High-quality folding and fixed blade knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0205</td>
+                    <td class="cost">2667</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">openai/gpt-4o-mini:online</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">10/10 found</td>
+                    <td class="confidence-low">100.0%</td>
+                    <td class="description">Total cost: $0.1923</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 2472</td>
+                    <td class="cost">$0.1923</td>
+                    <td class="cost">24722</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">American Buffalo Knife & Tool (ABKT) is a brand known for producing high-quality knives and tools designed for everyday use. They offer a range of products including folding knives, fixed blades, and accessories.</td>
+                    <td>United States</td>
+                    <td>One-handed opening knives, ball bearing assisted openers</td>
+                    <td class="notes">The website appears to be the official site for American Buffalo Knife & Tool, providing product categories and warranty information.</td>
+                    <td class="cost">$0.0255</td>
+                    <td class="cost">1761</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://www.5ivestargear.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a brand that provides a wide range of tactical and outdoor gear, including knives and survival equipment.</td>
+                    <td>United States</td>
+                    <td>Tactical gear, survival equipment, and outdoor accessories</td>
+                    <td class="notes">5ive Star Gear is a part of ATLANCO, a company known for supplying military and law enforcement equipment.</td>
+                    <td class="cost">$0.0247</td>
+                    <td class="cost">1445</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is a brand known for producing high-quality tactical gear, clothing, and accessories, including knives and blades, designed for law enforcement, military, and outdoor enthusiasts.</td>
+                    <td>United States</td>
+                    <td>Tactical gear, clothing, knives, and accessories</td>
+                    <td class="notes">The website is confirmed as the official site for 5.11 Tactical, which includes their knife and blade products.</td>
+                    <td class="cost">$0.0163</td>
+                    <td class="cost">1259</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is a brand known for creating innovative multi-tools designed for outdoor adventurers. Their products combine multiple functionalities into compact, durable tools suitable for survival and outdoor activities.</td>
+                    <td>Unknown</td>
+                    <td>Multi-tools for outdoor and survival use</td>
+                    <td class="notes">The official website was verified through multiple sources, including product listings and descriptions on reseller sites.</td>
+                    <td class="cost">$0.0262</td>
+                    <td class="cost">2083</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives is a brand known for producing high-quality knives with a focus on precision and durability.</td>
+                    <td>Czech Republic</td>
+                    <td>High-quality knives for various uses, including military and outdoor applications</td>
+                    <td class="notes">The website appears to be the official site for Acta Non Verba Knives, providing detailed information about their products and company.</td>
+                    <td class="cost">$0.0252</td>
+                    <td class="cost">1648</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>Actilam</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Actilam is a brand known for producing high-quality folding knives, often featuring unique designs and materials.</td>
+                    <td>France</td>
+                    <td>Folding knives with innovative locking mechanisms and premium materials</td>
+                    <td class="notes">An official website for Actilam could not be found. The brand is mentioned on various reseller sites like [knifeworks.com](https://knifeworks.com) and [bladehq.com](https://www.bladehq.com), but no direct official site was identified.</td>
+                    <td class="cost">$0.0263</td>
+                    <td class="cost">2044</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://agacampolin.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is a renowned Italian brand known for its high-quality switchblade knives, rooted in the rich artisan tradition of Maniago, Italy.</td>
+                    <td>Italy</td>
+                    <td>Switchblade knives and artisan knife craftsmanship</td>
+                    <td class="notes">The website appears to be the official site for AGA Campolin, providing detailed information about their knife collections and the brand's heritage.</td>
+                    <td class="cost">$0.0201</td>
+                    <td class="cost">1236</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Aiorosu Knives is a brand known for producing manual folding knives.</td>
+                    <td>Unknown</td>
+                    <td>manual folding knives</td>
+                    <td class="notes">No official website was found for Aiorosu Knives. The information available is from reseller sites like [bladehq.com](https://www.bladehq.com/cat--Aiorosu-Knives--3130), which list their products.</td>
+                    <td class="cost">$0.0423</td>
+                    <td class="cost">8510</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://www.akc.it/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC, or Automatic Knives Creations, is a brand known for producing high-quality automatic knives, including Italian stilettos and OTF (Out The Front) knives.</td>
+                    <td>Italy</td>
+                    <td>Automatic knives, Italian stilettos, OTF knives</td>
+                    <td class="notes">The website appears to be the official site for AKC, as it is dedicated to showcasing their knife creations and includes a detailed catalog of their products.</td>
+                    <td class="cost">$0.0263</td>
+                    <td class="cost">2069</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://www.almarknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Al Mar Knives is a renowned brand known for producing high-quality knives with a focus on craftsmanship and design. The brand offers a range of knives including folding and fixed blades, often used by outdoor enthusiasts and collectors.</td>
+                    <td>USA</td>
+                    <td>High-quality folding and fixed blade knives</td>
+                    <td class="notes">The website appears to be the official site for Al Mar Knives, providing detailed product listings and company information.</td>
+                    <td class="cost">$0.0299</td>
+                    <td class="cost">3505</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">openai/gpt-4o:online</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">10/10 found</td>
+                    <td class="confidence-low">100.0%</td>
+                    <td class="description">Total cost: $0.2630</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 2556</td>
+                    <td class="cost">$0.2630</td>
+                    <td class="cost">25560</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">American Buffalo Knife & Tool (ABKT) is a brand that specializes in designing and manufacturing high-quality knives and tools. They offer a range of products, including folding knives, fixed-blade knives, and accessories.</td>
+                    <td>null</td>
+                    <td>ball bearing assisted opening knives</td>
+                    <td class="notes">The website appears to be official, with a clear brand identity and a wide range of products available for purchase. The website also includes information about the brand's products, warranty, and customer support.</td>
+                    <td class="cost">$0.0202</td>
+                    <td class="cost">1793</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://www.5ivestargear.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a company that supplies personal equipment, material, and uniforms to the military, law enforcement, and public safety markets. They also offer a range of gear and accessories, including survival gear and outdoor gear.</td>
+                    <td>North Carolina, USA</td>
+                    <td>military and law enforcement gear, survival gear, outdoor gear</td>
+                    <td class="notes">The website appears to be an official e-commerce site for 5ive Star Gear, offering a range of products and featuring a dealer locator and login functionality. However, it's worth noting that the website does not specifically focus on knives or blades, but rather offers a broader range of gear and accessories.</td>
+                    <td class="cost">$0.0205</td>
+                    <td class="cost">1520</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is a brand that specializes in creating gear and apparel for public safety professionals, first responders, and outdoor enthusiasts. While they do offer knives and blades, their primary focus is on tactical gear and apparel.</td>
+                    <td>USA</td>
+                    <td>Tactical gear, apparel, and accessories for public safety professionals and outdoor enthusiasts</td>
+                    <td class="notes">5.11 Tactical is not exclusively a knife or blade brand, but they do offer a range of knives and blades as part of their product lineup.</td>
+                    <td class="cost">$0.0122</td>
+                    <td class="cost">1282</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is a brand that specializes in creating high-quality, versatile outdoor tools and knives, designed for adventure and survival situations.</td>
+                    <td>Unknown</td>
+                    <td>Multi-tools, survival knives, and outdoor gear</td>
+                    <td class="notes">The official website was found through a web search, and it appears to be a legitimate website for the brand, featuring their products and company information.</td>
+                    <td class="cost">$0.0202</td>
+                    <td class="cost">2117</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives is a knife manufacturer that produces high-quality knives for various purposes, including military and outdoor use.</td>
+                    <td>Unknown</td>
+                    <td>high-quality knives for military and outdoor use</td>
+                    <td class="notes">The website appears to be official, with a clear brand identity and product information. However, more information about the company's history and location could not be found.</td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1701</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>Actilam</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-medium">medium</td>
+                    <td class="description">Actilam is a knife brand that produces high-quality folding knives with unique designs and materials.</td>
+                    <td>Unknown</td>
+                    <td>Folding knives with unique materials such as olive wood and Damascus steel</td>
+                    <td class="notes">Although I couldn't find an official website for Actilam, they appear to be a legitimate brand with products available on various online marketplaces and knife enthusiast websites. It's possible that they may not have an official website or it may be under construction.</td>
+                    <td class="cost">$0.0202</td>
+                    <td class="cost">2095</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://agacampolin.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is an Italian knife manufacturer based in Maniago, Italy, known for producing high-quality knives and stilettos since 1947.</td>
+                    <td>Maniago, Italy</td>
+                    <td>Stilettos, artisan knives</td>
+                    <td class="notes">The website appears to be official, with a clear presentation of the brand's products and history. The contact page also lists the company's headquarters in Austria, indicating a possible relocation or expansion.</td>
+                    <td class="cost">$0.0173</td>
+                    <td class="cost">1440</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Aiorosu Knives is a brand that offers manual folding knives.</td>
+                    <td>Unknown</td>
+                    <td>Manual folding knives</td>
+                    <td class="notes">The search results did not yield an official website for Aiorosu Knives. The brand is listed on BladeHQ, a retailer of knives and outdoor gear, but no official website or social media presence could be found.</td>
+                    <td class="cost">$0.0209</td>
+                    <td class="cost">8308</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://www.akc.it/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC is an Italian knife brand known for creating high-quality automatic knives, also known as switchblades or OTF (out-the-front) knives.</td>
+                    <td>Italy</td>
+                    <td>Automatic knives, OTF knives, Italian stiletto knives</td>
+                    <td class="notes">The official website was verified through multiple sources, including the website's content and design, which matches the brand's identity and product offerings.</td>
+                    <td class="cost">$0.0202</td>
+                    <td class="cost">2073</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://www.almarknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Al Mar Knives is a US-based knife manufacturer known for producing high-quality, durable knives for various purposes, including outdoor, tactical, and everyday carry use.</td>
+                    <td>USA</td>
+                    <td>High-carbon stainless steel knives, tactical knives, outdoor knives</td>
+                    <td class="notes">The website appears to be the official website of Al Mar Knives, with a clear and professional design, and a wide range of products available for purchase.</td>
+                    <td class="cost">$0.0204</td>
+                    <td class="cost">2816</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">meta-llama/llama-3.1-70b-instruct:online</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">10/10 found</td>
+                    <td class="confidence-low">100.0%</td>
+                    <td class="description">Total cost: $0.1924</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 2515</td>
+                    <td class="cost">$0.1924</td>
+                    <td class="cost">25145</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">ABKT (American Buffalo Knife & Tool) is a family-owned knife and tool manufacturer based in Tennessee, specializing in affordable, functional cutlery and multi-tools for outdoor enthusiasts. The brand emphasizes durability, practical designs, and customer service, offering products ranging from assisted-opening folding knives to fixed-blade hunting tools.</td>
+                    <td>Sweetwater, Tennessee, US</td>
+                    <td>Ball-bearing assisted opening mechanisms, Mossy Oak camouflage-patterned handles, D2 steel blades, and lifetime warranties</td>
+                    <td class="notes">The official website (abkt.com) is verified through multiple sources including company contact pages [1][14], distributor partnerships [2][9], and product listings [3][11]. ABKT operates under Blackbird Products Group since 2021 [16]. Some historical references list an older URL (abktinc.com) which redirects to the current site.</td>
+                    <td class="cost">$1.0913</td>
+                    <td class="cost">99617</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://5ivestargear.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a brand under ATLANCO, specializing in tactical gear, survival equipment, and outdoor tools for military personnel, law enforcement, and outdoor enthusiasts. Their product line includes camping gear, field equipment, and survival knives, emphasizing durability and versatility for both professional and recreational use.</td>
+                    <td>Marietta, Georgia, United States</td>
+                    <td>Tactical gear, survival equipment, military surplus, and outdoor tools including knives</td>
+                    <td class="notes">While 5ive Star Gear's official website focuses broadly on tactical and survival gear, third-party sources confirm they produce knives such as the T1 Survival Paracord Knife. The brand is a subsidiary of ATLANCO, which has manufactured military and law enforcement equipment since the 1950s.</td>
+                    <td class="cost">$0.7353</td>
+                    <td class="cost">67216</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is a U.S.-based manufacturer of purpose-built tactical gear, including apparel, footwear, bags, and tools. While primarily known for tactical clothing and accessories, the brand also produces knives and edged tools designed for outdoor, military, and law enforcement use.</td>
+                    <td>Irvine, California, United States</td>
+                    <td>Tactical gear (apparel, footwear, bags, knives, tools) for military, law enforcement, and outdoor enthusiasts</td>
+                    <td class="notes">While 5.11 Tactical is not exclusively a knife/blade brand, their product line includes tactical knives, axes, and tools. The official website features dedicated sections for edged tools, confirming their status as a legitimate manufacturer in this category.</td>
+                    <td class="cost">$0.8009</td>
+                    <td class="cost">73202</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://www.aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is an innovative outdoor gear brand specializing in high-performance multi-tools and survival equipment, notably the COMBAR series. Founded by former Israeli Special Forces members, the brand focuses on MIL-SPEC durability and compact, versatile designs for adventurers, military personnel, and outdoor enthusiasts.</td>
+                    <td>Las Vegas, United States (headquarters)</td>
+                    <td>Multi-tools integrating axes, knives, saws, hammers, and spades in compact designs (e.g., COMBAR Pro Titanium)</td>
+                    <td class="notes">The official website was confirmed via multiple independent sources (Explorium.ai, Athlon Outdoors, and company profiles). Aclim8's products are sold through authorized retailers like BladeHQ and Nomadic Supply, but the brand maintains its own direct-to-consumer site.</td>
+                    <td class="cost">$1.4503</td>
+                    <td class="cost">132249</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Czech-based knife manufacturer specializing in high-quality tactical, military, and outdoor knives crafted with premium materials like Sleipner and Elmax steels. Known for collaborations with military units and durable designs.</td>
+                    <td>Czech Republic</td>
+                    <td>Military/tactical knives, bushcraft tools, and modern EDC folders with a focus on functionality and rugged durability.</td>
+                    <td class="notes">Website verified via multiple retailer references (e.g., Blade HQ, Heinnie Haynes) and direct brand mentions in reviews. The domain matches the brand's abbreviation (ANV) and includes Czech contact details consistent with sourcing data.</td>
+                    <td class="cost">$0.1055</td>
+                    <td class="cost">10000</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>Actilam</td>
+                    <td class="url-found">https://www.actilam.fr</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">French knife brand specializing in high-quality folding knives that blend technical innovation with aesthetic design. Founded through a collaboration between Pascal Jodas (industrial forging expert) and Jean-Pierre Sucheras (two-time 'Meilleur Ouvrier de France' award winner).</td>
+                    <td>Thiers, France</td>
+                    <td>Urban folding knives with forged blades, cryogenic steel treatments, and patented locking mechanisms like the double cone system</td>
+                    <td class="notes">Official website confirmed through multiple sources [12][17]. Brand emphasizes French manufacturing through ARNO forges. Website contains first-party product details, founder statements, and technical specifications.</td>
+                    <td class="cost">$1.4720</td>
+                    <td class="cost">134183</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://www.agacampolin.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is a renowned Italian knife manufacturer specializing in handcrafted automatic stilettos and leverlock knives, blending traditional craftsmanship with modern design. The brand represents three generations of knife-making expertise, producing high-quality switchblades and hunting knives since 1947.</td>
+                    <td>Maniago, Italy (production); Villach, Austria (headquarters)</td>
+                    <td>Italian automatic stilettos, leverlock mechanisms, swinguard knives, and limited-edition collector pieces</td>
+                    <td class="notes">The official website (agacampolin.com) is verified through multiple sources including company news[4], contact pages[9], and historical references[3][5][16]. The site features product catalogs, manufacturing details, and direct sales, confirming it is not a fan/reseller site.</td>
+                    <td class="cost">$0.5290</td>
+                    <td class="cost">48425</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description"></td>
+                    <td>Unknown</td>
+                    <td></td>
+                    <td class="notes">NETWORK ERROR: The operation was aborted due to timeout</td>
+                    <td class="cost">$0.0000</td>
+                    <td class="cost">0</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://www.akc.it</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Italian brand specializing in automatic knives and switchblades, known for combining traditional craftsmanship with innovative designs.</td>
+                    <td>Maniago, Italy</td>
+                    <td>Automatic knives (OTF, leverletto), Italian-made switchblades, tactical and collector-focused designs</td>
+                    <td class="notes">AKC (Automatic Knives Creations) is directly associated with the Campolin family, a historic name in Italian cutlery. The brand's official site (akc.it) features proprietary designs like the Leverletto and Speed Hunter models, confirming its authenticity as a manufacturer rather than a reseller. Multiple sources (including BladeHQ and specialized knife forums) validate Maniago-based production and the brand's focus on automatic mechanisms[2][9][14][16].</td>
+                    <td class="cost">$0.6530</td>
+                    <td class="cost">59724</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://www.almarknives.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Al Mar Knives is a production knife company renowned for blending custom-quality craftsmanship with innovative tactical designs. Established in 1979 by Al Mar, a former Green Beret and industrial designer, the brand specializes in high-performance knives for military, law enforcement, and outdoor enthusiasts. Their products are recognized for durability, precision engineering, and collaborations with Special Forces experts.</td>
+                    <td>Tualatin, Oregon, United States</td>
+                    <td>Tactical and survival knives, SERE series, D2 steel blades, lightweight EDC designs</td>
+                    <td class="notes">Website verified via multiple sources including Wikipedia, company history pages, and retailer listings. The domain hosts product catalogs, brand history, and direct sales, confirming it as the official site (not a reseller or fan page).</td>
+                    <td class="cost">$0.2053</td>
+                    <td class="cost">19015</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">perplexity/sonar-deep-research</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">9/10 found</td>
+                    <td class="confidence-low">90.0%</td>
+                    <td class="description">Total cost: $7.0426</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 71515</td>
+                    <td class="cost">$7.0426</td>
+                    <td class="cost">643631</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>ABKT</td>
+                    <td class="url-found">https://abkt.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">American Buffalo Knife & Tool (ABKT) is a brand known for producing high-quality knives designed for everyday use. They offer a variety of knife models including folding and fixed blades, with features like ball bearing assisted openers and textured G10 handles for better grip.</td>
+                    <td>Unknown</td>
+                    <td>Folding and fixed blade knives, ball bearing assisted openers, textured G10 handles</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1968</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>5ive Star Gear</td>
+                    <td class="url-found">https://www.5ivestargear.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5ive Star Gear is a well-known supplier of personal equipment, materials, and uniforms to the military, law enforcement, and public safety markets. Founded in 1950 as the Atlanta Army Navy Supply Company, the company has evolved under the leadership of the Zaglin family to become a dynamic market leader in the design and production of a wide variety of quality manufactured goods.</td>
+                    <td>North Carolina, USA</td>
+                    <td>military, law enforcement, and public safety equipment; hunting and outdoor gear</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1645</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>5.11 Tactical</td>
+                    <td class="url-found">https://www.511tactical.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">5.11 Tactical is a brand known for producing high-quality tactical gear, clothing, and accessories designed for law enforcement, military, and outdoor enthusiasts. They focus on creating purpose-built products that meet the needs of professionals in demanding situations.</td>
+                    <td>United States</td>
+                    <td>tactical gear, clothing, and accessories for law enforcement, military, and outdoor use</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0126</td>
+                    <td class="cost">1420</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>Aclim8</td>
+                    <td class="url-found">https://aclim8.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Aclim8 is a brand that specializes in multi-functional tools designed for outdoor adventurers. Their flagship product, the COMBAR, is a 6-in-1 tool that combines chopping, hammering, digging, slicing, and sawing capabilities into a single, compact package.</td>
+                    <td>Unknown</td>
+                    <td>Multi-functional outdoor tools, particularly the COMBAR series</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">2379</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>Acta Non Verba Knives</td>
+                    <td class="url-found">https://www.anvknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">Acta Non Verba Knives is a brand that specializes in high-quality knives, particularly military and tactical models. They offer a variety of designs with features such as durable materials and reliable mechanisms.</td>
+                    <td>Unknown</td>
+                    <td>Military and tactical knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">1896</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>Actilam</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Actilam is a knife brand known for producing high-quality folding knives with unique designs and materials. The brand is recognized for its attention to detail and craftsmanship.</td>
+                    <td>Unknown</td>
+                    <td>Folding knives with unique materials and designs</td>
+                    <td class="notes">The official website for Actilam could not be found. The brand is mentioned on several reputable knife retailer sites, but no official brand website was identified.</td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">2335</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>AGA Campolin</td>
+                    <td class="url-found">https://agacampolin.com</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AGA Campolin is an Italian knife manufacturer known for producing high-quality stilettos and artisanal knives. The company was founded by Angelo Campolin in 1947 and has a rich history rooted in the knife-making tradition of Maniago, Italy.</td>
+                    <td>Italy (company headquarters now in Austria)</td>
+                    <td>Stilettos, artisanal knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0162</td>
+                    <td class="cost">1571</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>Aiorosu Knives</td>
+                    <td class="url-not-found">Not Found</td>
+                    <td class="confidence-low">low</td>
+                    <td class="description">Aiorosu Knives is a brand known for producing manual folding knives.</td>
+                    <td>Unknown</td>
+                    <td>Manual folding knives</td>
+                    <td class="notes">No official website was found. The brand is listed on retailer sites such as BladeHQ, but there is no direct link to an official manufacturer's site.</td>
+                    <td class="cost">$0.0212</td>
+                    <td class="cost">9068</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>AKC</td>
+                    <td class="url-found">https://www.akc.it/index.html</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AKC (Automatic Knives Creations) is a brand known for manufacturing high-quality automatic knives and Italian stilettos. The brand is founded by Claudio Scarabello and offers a variety of knives designed for everyday carry (EDC) and tactical use.</td>
+                    <td>Italy</td>
+                    <td>Automatic knives, Italian stilettos</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0203</td>
+                    <td class="cost">2335</td>
+                </tr>
+                <tr class="">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>Al Mar Knives</td>
+                    <td class="url-found">https://www.almarknives.com/</td>
+                    <td class="confidence-high">high</td>
+                    <td class="description">AL MAR Knives is a well-respected brand known for producing high-quality, durable knives designed for various purposes, including tactical, survival, and everyday use. The brand offers a wide range of fixed blade and folding knives, as well as specialty items like cigar cutters.</td>
+                    <td>USA</td>
+                    <td>Tactical and survival knives, fixed blade and folding knives</td>
+                    <td class="notes"></td>
+                    <td class="cost">$0.0204</td>
+                    <td class="cost">3297</td>
+                </tr>
+                <tr class="summary-row">
+                    <td class="model-name">qwen/qwen-2.5-72b-instruct:online</td>
+                    <td>--- MODEL SUMMARY ---</td>
+                    <td class="url-found">10/10 found</td>
+                    <td class="confidence-low">100.0%</td>
+                    <td class="description">Total cost: $0.1922</td>
+                    <td></td>
+                    <td></td>
+                    <td class="notes">Avg tokens per brand: 2791</td>
+                    <td class="cost">$0.1922</td>
+                    <td class="cost">27914</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

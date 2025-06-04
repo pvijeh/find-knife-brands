@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "model_used": "perplexity/sonar-deep-research",
+    "model_name": "perplexity/sonar-deep-research",
+    "timestamp": "2025-05-25T23:41:20.286Z",
+    "total_brands_processed": 10,
+    "successful_searches": 10,
+    "failed_searches": 0,
+    "success_rate": "100.0%",
+    "error_breakdown": {},
+    "model_availability": "working",
+    "token_usage": {
+      "total_prompt_tokens": 2498,
+      "total_completion_tokens": 857550,
+      "total_tokens": 860048,
+      "total_cost_credits": 9.418980999999999,
+      "estimated_cost_usd": 0.000009,
+      "average_tokens_per_brand": 86005,
+      "average_cost_per_brand": 0.94,
+      "total_requests": 10,
+      "per_brand_breakdown": [
+        {
+          "brand_name": "ABKT",
+          "prompt_tokens": 246,
+          "completion_tokens": 73116,
+          "total_tokens": 73362,
+          "cost": 0.803169
+        },
+        {
+          "brand_name": "5ive Star Gear",
+          "prompt_tokens": 250,
+          "completion_tokens": 22048,
+          "total_tokens": 22298,
+          "cost": 0.240877
+        },
+        {
+          "brand_name": "5.11 Tactical",
+          "prompt_tokens": 252,
+          "completion_tokens": 72416,
+          "total_tokens": 72668,
+          "cost": 0.795526
+        },
+        {
+          "brand_name": "Aclim8",
+          "prompt_tokens": 250,
+          "completion_tokens": 151005,
+          "total_tokens": 151255,
+          "cost": 1.6594700000000002
+        },
+        {
+          "brand_name": "Acta Non Verba Knives",
+          "prompt_tokens": 254,
+          "completion_tokens": 38319,
+          "total_tokens": 38573,
+          "cost": 0.41952999999999996
+        },
+        {
+          "brand_name": "Actilam",
+          "prompt_tokens": 248,
+          "completion_tokens": 67089,
+          "total_tokens": 67337,
+          "cost": 0.7365339999999998
+        },
+        {
+          "brand_name": "AGA Campolin",
+          "prompt_tokens": 248,
+          "completion_tokens": 101193,
+          "total_tokens": 101441,
+          "cost": 1.1113299999999997
+        },
+        {
+          "brand_name": "Aiorosu Knives",
+          "prompt_tokens": 254,
+          "completion_tokens": 205612,
+          "total_tokens": 205866,
+          "cost": 2.26068
+        },
+        {
+          "brand_name": "AKC",
+          "prompt_tokens": 246,
+          "completion_tokens": 103986,
+          "total_tokens": 104232,
+          "cost": 1.1424149999999997
+        },
+        {
+          "brand_name": "Al Mar Knives",
+          "prompt_tokens": 250,
+          "completion_tokens": 22766,
+          "total_tokens": 23016,
+          "cost": 0.2494499999999995
+        }
+      ]
+    }
+  },
+  "results": [
+    {
+      "brand_name": "ABKT",
+      "website_url": "https://abkt.com",
+      "description": "ABKT (American Buffalo Knife & Tool) is a family-owned company specializing in affordable, durable cutlery and multi-tools for outdoor enthusiasts, hunters, and everyday carry. Known for blending functionality with value, they offer spring-assisted openers, D2 steel blades, and ergonomic designs.",
+      "additional_info": {
+        "founded": "2006 (inferred from 15 years of operation prior to 2021 acquisition)",
+        "location": "Sweetwater, Tennessee, USA",
+        "specialties": "Ball-bearing assisted openers, D2 steel knives, Mossy Oak camo collaborations, and multi-tools"
+      },
+      "search_confidence": "high",
+      "notes": "Website verified through multiple authoritative sources including Mossy Oak partnership announcements [2], distributor listings [4][6], and product documentation [9][11][13]. The site contains company history, product catalogs, and direct sales functionality.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:33:19.789Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"ABKT\",\n    \"website_url\": \"https://abkt.com\",\n    \"description\": \"ABKT (American Buffalo Knife & Tool) is a family-owned company specializing in affordable, durable cutlery and multi-tools for outdoor enthusiasts, hunters, and everyday carry. Known for blending functionality with value, they offer spring-assisted openers, D2 steel blades, and ergonomic designs.\",\n    \"additional_info\": {\n        \"founded\": \"2006 (inferred from 15 years of operation prior to 2021 acquisition)\",\n        \"location\": \"Sweetwater, Tennessee, USA\",\n        \"specialties\": \"Ball-bearing assisted openers, D2 steel knives, Mossy Oak camo collaborations, and multi-tools\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"Website verified through multiple authoritative sources including Mossy Oak partnership announcements [2], distributor listings [4][6], and product documentation [9][11][13]. The site contains company history, product catalogs, and direct sales functionality.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 246,
+        "completion_tokens": 73116,
+        "total_tokens": 73362,
+        "cost": 0.803169
+      }
+    },
+    {
+      "brand_name": "5ive Star Gear",
+      "website_url": "https://5ivestargear.com",
+      "description": "5ive Star Gear is a brand specializing in tactical gear, survival equipment, and outdoor tools, including knives and blades. It is a subsidiary of ATLANCO, a company with decades of experience in military and law enforcement apparel and gear.",
+      "additional_info": {
+        "founded": "2010",
+        "location": "United States (Marietta, Georgia)",
+        "specialties": "Tactical gear, survival equipment, military surplus, and outdoor tools including survival knives"
+      },
+      "search_confidence": "high",
+      "notes": "The brand's T1 Survival Knife (420 stainless steel blade) is documented in independent reviews[4], confirming their blade production. The official website[1][3] and ATLANCO's corporate history[11][13] validate the URL's authenticity.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:33:58.093Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"5ive Star Gear\",\n    \"website_url\": \"https://5ivestargear.com\",\n    \"description\": \"5ive Star Gear is a brand specializing in tactical gear, survival equipment, and outdoor tools, including knives and blades. It is a subsidiary of ATLANCO, a company with decades of experience in military and law enforcement apparel and gear.\",\n    \"additional_info\": {\n        \"founded\": \"2010\",\n        \"location\": \"United States (Marietta, Georgia)\",\n        \"specialties\": \"Tactical gear, survival equipment, military surplus, and outdoor tools including survival knives\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The brand's T1 Survival Knife (420 stainless steel blade) is documented in independent reviews[4], confirming their blade production. The official website[1][3] and ATLANCO's corporate history[11][13] validate the URL's authenticity.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 22048,
+        "total_tokens": 22298,
+        "cost": 0.240877
+      }
+    },
+    {
+      "brand_name": "5.11 Tactical",
+      "website_url": "https://www.511tactical.com",
+      "description": "5.11 Tactical is a globally recognized brand specializing in purpose-driven tactical gear, including knives, apparel, footwear, and accessories. Originally developed in collaboration with the FBI Training Academy, the brand emphasizes durability, functionality, and innovation for military, law enforcement, first responders, and outdoor enthusiasts.",
+      "additional_info": {
+        "founded": 2003,
+        "location": "United States (headquarters in Costa Mesa, California)",
+        "specialties": "Tactical knives, outdoor and combat-ready gear, high-performance apparel, and modular storage solutions"
+      },
+      "search_confidence": "high",
+      "notes": "The official website (511tactical.com) includes a dedicated section for knives and tools, confirming its status as the brand's primary platform. While 5.11 Tactical offers a broad range of tactical products, its knives are prominently featured alongside its core apparel lines.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:35:12.712Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"5.11 Tactical\",\n    \"website_url\": \"https://www.511tactical.com\",\n    \"description\": \"5.11 Tactical is a globally recognized brand specializing in purpose-driven tactical gear, including knives, apparel, footwear, and accessories. Originally developed in collaboration with the FBI Training Academy, the brand emphasizes durability, functionality, and innovation for military, law enforcement, first responders, and outdoor enthusiasts.\",\n    \"additional_info\": {\n        \"founded\": 2003,\n        \"location\": \"United States (headquarters in Costa Mesa, California)\",\n        \"specialties\": \"Tactical knives, outdoor and combat-ready gear, high-performance apparel, and modular storage solutions\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The official website (511tactical.com) includes a dedicated section for knives and tools, confirming its status as the brand's primary platform. While 5.11 Tactical offers a broad range of tactical products, its knives are prominently featured alongside its core apparel lines.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 252,
+        "completion_tokens": 72416,
+        "total_tokens": 72668,
+        "cost": 0.795526
+      }
+    },
+    {
+      "brand_name": "Aclim8",
+      "website_url": "https://www.aclim8.com/",
+      "description": "ACLIM8 is an innovative outdoor gear brand founded by former Israeli Special Forces members, specializing in high-performance multi-tools and survival equipment. Their flagship product, the COMBAR™, integrates tools like axes, knives, saws, hammers, and spades into compact, durable designs using premium materials like titanium and hardened stainless steel.",
+      "additional_info": {
+        "founded": "2014",
+        "location": "Israel (headquartered in Las Vegas, USA, per some sources)",
+        "specialties": "Multi-functional survival tools, military-grade outdoor gear, and compact blade-integrated systems for adventurers and professionals."
+      },
+      "search_confidence": "high",
+      "notes": "The official website (aclim8.com) is consistently referenced across multiple authoritative sources, including product listings [1][10][17], brand case studies [4][12], and third-party reviews [11][13]. The site focuses on ACLIM8's core knife/blade-integrated tools like the COMBAR series, confirming its status as the primary brand domain.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:36:26.112Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Aclim8\",\n    \"website_url\": \"https://www.aclim8.com/\",\n    \"description\": \"ACLIM8 is an innovative outdoor gear brand founded by former Israeli Special Forces members, specializing in high-performance multi-tools and survival equipment. Their flagship product, the COMBAR™, integrates tools like axes, knives, saws, hammers, and spades into compact, durable designs using premium materials like titanium and hardened stainless steel.\",\n    \"additional_info\": {\n        \"founded\": \"2014\",\n        \"location\": \"Israel (headquartered in Las Vegas, USA, per some sources)\",\n        \"specialties\": \"Multi-functional survival tools, military-grade outdoor gear, and compact blade-integrated systems for adventurers and professionals.\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The official website (aclim8.com) is consistently referenced across multiple authoritative sources, including product listings [1][10][17], brand case studies [4][12], and third-party reviews [11][13]. The site focuses on ACLIM8's core knife/blade-integrated tools like the COMBAR series, confirming its status as the primary brand domain.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 151005,
+        "total_tokens": 151255,
+        "cost": 1.6594700000000002
+      }
+    },
+    {
+      "brand_name": "Acta Non Verba Knives",
+      "website_url": "https://www.anvknives.com",
+      "description": "A Czech knife manufacturer specializing in high-quality, practical knives designed for military, tactical, and outdoor use, emphasizing durability and functionality under the motto 'Actions, Not Words'.",
+      "additional_info": {
+        "founded": "2018",
+        "location": "Prague, Czech Republic",
+        "specialties": "Military/outdoor knives, collaborations with Czech armed forces, Sleipner steel blades, modular customization options"
+      },
+      "search_confidence": "high",
+      "notes": "Website confirmed via multiple sources (e.g., contact pages [9][13][17], product listings [15], and third-party retailer references [2][6]). The domain hosts official company details, warranty documents [18], and direct sales functionality.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:37:00.921Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Acta Non Verba Knives\",\n    \"website_url\": \"https://www.anvknives.com\",\n    \"description\": \"A Czech knife manufacturer specializing in high-quality, practical knives designed for military, tactical, and outdoor use, emphasizing durability and functionality under the motto 'Actions, Not Words'.\",\n    \"additional_info\": {\n        \"founded\": \"2018\",\n        \"location\": \"Prague, Czech Republic\",\n        \"specialties\": \"Military/outdoor knives, collaborations with Czech armed forces, Sleipner steel blades, modular customization options\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"Website confirmed via multiple sources (e.g., contact pages [9][13][17], product listings [15], and third-party retailer references [2][6]). The domain hosts official company details, warranty documents [18], and direct sales functionality.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 254,
+        "completion_tokens": 38319,
+        "total_tokens": 38573,
+        "cost": 0.41952999999999996
+      }
+    },
+    {
+      "brand_name": "Actilam",
+      "website_url": "https://www.actilam.fr",
+      "description": "French knife manufacturer specializing in high-quality folding pocket knives with innovative locking mechanisms and forged blades, combining industrial precision with artistic design.",
+      "additional_info": {
+        "founded": null,
+        "location": "Thiers, France",
+        "specialties": "Forged nitrogen-enriched steel blades, double-cone locking systems, and modern EDC (Everyday Carry) designs"
+      },
+      "search_confidence": "high",
+      "notes": "Founded by Pascal Jodas (industrial metallurgy expert) and Jean-Pierre Sucheras (two-time 'Best Worker of France'). Produced via Arno-Industrie, a Thiers-based forging company. The T3 model (2013 release) features a patented twisted spring mechanism.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:37:55.156Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Actilam\",\n    \"website_url\": \"https://www.actilam.fr\",\n    \"description\": \"French knife manufacturer specializing in high-quality folding pocket knives with innovative locking mechanisms and forged blades, combining industrial precision with artistic design.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"Thiers, France\",\n        \"specialties\": \"Forged nitrogen-enriched steel blades, double-cone locking systems, and modern EDC (Everyday Carry) designs\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"Founded by Pascal Jodas (industrial metallurgy expert) and Jean-Pierre Sucheras (two-time 'Best Worker of France'). Produced via Arno-Industrie, a Thiers-based forging company. The T3 model (2013 release) features a patented twisted spring mechanism.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 67089,
+        "total_tokens": 67337,
+        "cost": 0.7365339999999998
+      }
+    },
+    {
+      "brand_name": "AGA Campolin",
+      "website_url": "https://www.agacampolin.com",
+      "description": "AGA Campolin is a renowned Italian knife manufacturer specializing in handcrafted automatic stilettos and switchblades, blending traditional craftsmanship with modern design. The brand is celebrated for its high-quality leverlock, picklock, and swinguard mechanisms, producing knives ranging from classic stilettos to tactical models.",
+      "additional_info": {
+        "founded": "1947",
+        "location": "Maniago, Italy (founded); Villach, Austria (current headquarters)",
+        "specialties": "Automatic knives, Italian stilettos, leverlock/picklock mechanisms, limited-edition collectibles"
+      },
+      "search_confidence": "high",
+      "notes": "The official website (agacampolin.com) features product catalogs, company history, and news updates. The brand collaborates with collectors and maintains a showroom in Austria. While founded in Italy, operational headquarters moved to Austria per historical records[13][15].",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:38:42.825Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"AGA Campolin\",\n    \"website_url\": \"https://www.agacampolin.com\",\n    \"description\": \"AGA Campolin is a renowned Italian knife manufacturer specializing in handcrafted automatic stilettos and switchblades, blending traditional craftsmanship with modern design. The brand is celebrated for its high-quality leverlock, picklock, and swinguard mechanisms, producing knives ranging from classic stilettos to tactical models.\",\n    \"additional_info\": {\n        \"founded\": \"1947\",\n        \"location\": \"Maniago, Italy (founded); Villach, Austria (current headquarters)\",\n        \"specialties\": \"Automatic knives, Italian stilettos, leverlock/picklock mechanisms, limited-edition collectibles\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The official website (agacampolin.com) features product catalogs, company history, and news updates. The brand collaborates with collectors and maintains a showroom in Austria. While founded in Italy, operational headquarters moved to Austria per historical records[13][15].\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 248,
+        "completion_tokens": 101193,
+        "total_tokens": 101441,
+        "cost": 1.1113299999999997
+      }
+    },
+    {
+      "brand_name": "Aiorosu Knives",
+      "website_url": null,
+      "description": "Aiorosu Knives is a Guangzhou, China-based manufacturer specializing in high-end production folding knives for collectors and everyday carry (EDC) enthusiasts. The brand emphasizes modern designs, premium materials like titanium and M390 steel, and features such as swappable scales for customization.",
+      "additional_info": {
+        "founded": "2017 (first product release)",
+        "location": "Guangzhou, China",
+        "specialties": "Mid-sized titanium frame lock flippers, wharncliffe blade designs, and competitive pricing through direct manufacturing"
+      },
+      "search_confidence": "medium",
+      "notes": "While multiple retailer listings (Blade HQ) and industry articles (KnifeNews) confirm the brand's existence and product details, no official website was identified in the provided search results. The company appears to operate primarily through OEM partnerships and third-party distributors.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:39:43.231Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Aiorosu Knives\",\n    \"website_url\": null,\n    \"description\": \"Aiorosu Knives is a Guangzhou, China-based manufacturer specializing in high-end production folding knives for collectors and everyday carry (EDC) enthusiasts. The brand emphasizes modern designs, premium materials like titanium and M390 steel, and features such as swappable scales for customization.\",\n    \"additional_info\": {\n        \"founded\": \"2017 (first product release)\",\n        \"location\": \"Guangzhou, China\",\n        \"specialties\": \"Mid-sized titanium frame lock flippers, wharncliffe blade designs, and competitive pricing through direct manufacturing\"\n    },\n    \"search_confidence\": \"medium\",\n    \"notes\": \"While multiple retailer listings (Blade HQ) and industry articles (KnifeNews) confirm the brand's existence and product details, no official website was identified in the provided search results. The company appears to operate primarily through OEM partnerships and third-party distributors.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 254,
+        "completion_tokens": 205612,
+        "total_tokens": 205866,
+        "cost": 2.26068
+      }
+    },
+    {
+      "brand_name": "AKC",
+      "website_url": "https://akc.it",
+      "description": "Italian brand specializing in automatic switchblades and OTF (Out-The-Front) knives, combining traditional craftsmanship with modern design.",
+      "additional_info": {
+        "founded": null,
+        "location": "Maniago, Italy",
+        "specialties": "Innovative automatic knives, including the Leverletto and Speed Hunter models, made with Italian craftsmanship"
+      },
+      "search_confidence": "high",
+      "notes": "Multiple sources confirm akc.it as the official site, including brand-specific content and third-party references[1][16][18]. Reseller listings and forum discussions validate AKC's Italian manufacturing heritage[2][3][4].",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:40:44.352Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"AKC\",\n    \"website_url\": \"https://akc.it\",\n    \"description\": \"Italian brand specializing in automatic switchblades and OTF (Out-The-Front) knives, combining traditional craftsmanship with modern design.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"Maniago, Italy\",\n        \"specialties\": \"Innovative automatic knives, including the Leverletto and Speed Hunter models, made with Italian craftsmanship\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"Multiple sources confirm akc.it as the official site, including brand-specific content and third-party references[1][16][18]. Reseller listings and forum discussions validate AKC's Italian manufacturing heritage[2][3][4].\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 246,
+        "completion_tokens": 103986,
+        "total_tokens": 104232,
+        "cost": 1.1424149999999997
+      }
+    },
+    {
+      "brand_name": "Al Mar Knives",
+      "website_url": "https://www.almarknives.com/",
+      "description": "Al Mar Knives is a production knife company founded in 1979 by Al Mar, specializing in tactical, hunting, fishing, and kitchen knives with a focus on blending custom-quality design with mass production methods. The brand is renowned for its SERE (Survival-Evasion-Resistance-Escape) knife, developed for military use and adopted by Special Forces training programs.",
+      "additional_info": {
+        "founded": "1979",
+        "location": "Tualatin, Oregon, United States",
+        "specialties": "Tactical knives, SERE series, collaborations with military and martial arts experts"
+      },
+      "search_confidence": "high",
+      "notes": "The official website (almarknives.com) is verified through multiple sources, including the company's historical documentation[4][9] and product listings[7][8]. The domain aligns with citations in search results and contains brand-specific content, excluding reseller or fan-site characteristics.",
+      "model_used": "perplexity/sonar-deep-research",
+      "timestamp": "2025-05-25T23:41:20.285Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Al Mar Knives\",\n    \"website_url\": \"https://www.almarknives.com/\",\n    \"description\": \"Al Mar Knives is a production knife company founded in 1979 by Al Mar, specializing in tactical, hunting, fishing, and kitchen knives with a focus on blending custom-quality design with mass production methods. The brand is renowned for its SERE (Survival-Evasion-Resistance-Escape) knife, developed for military use and adopted by Special Forces training programs.\",\n    \"additional_info\": {\n        \"founded\": \"1979\",\n        \"location\": \"Tualatin, Oregon, United States\",\n        \"specialties\": \"Tactical knives, SERE series, collaborations with military and martial arts experts\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The official website (almarknives.com) is verified through multiple sources, including the company's historical documentation[4][9] and product listings[7][8]. The domain aligns with citations in search results and contains brand-specific content, excluding reseller or fan-site characteristics.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 250,
+        "completion_tokens": 22766,
+        "total_tokens": 23016,
+        "cost": 0.2494499999999995
+      }
+    }
+  ]
+}

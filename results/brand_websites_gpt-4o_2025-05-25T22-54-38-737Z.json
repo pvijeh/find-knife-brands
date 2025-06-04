@@ -1,0 +1,327 @@
+{
+  "metadata": {
+    "model_used": "gpt-4o",
+    "model_name": "openai/gpt-4o:online",
+    "timestamp": "2025-05-25T22:54:38.737Z",
+    "total_brands_processed": 10,
+    "successful_searches": 10,
+    "failed_searches": 0,
+    "success_rate": "100.0%",
+    "error_breakdown": {},
+    "model_availability": "working",
+    "token_usage": {
+      "total_prompt_tokens": 24086,
+      "total_completion_tokens": 1474,
+      "total_tokens": 25560,
+      "total_cost_credits": 0.262955,
+      "estimated_cost_usd": 0,
+      "average_tokens_per_brand": 2556,
+      "average_cost_per_brand": 0.03,
+      "total_requests": 10,
+      "per_brand_breakdown": [
+        {
+          "brand_name": "ABKT",
+          "prompt_tokens": 1612,
+          "completion_tokens": 149,
+          "total_tokens": 1761,
+          "cost": 0.02552
+        },
+        {
+          "brand_name": "5ive Star Gear",
+          "prompt_tokens": 1303,
+          "completion_tokens": 142,
+          "total_tokens": 1445,
+          "cost": 0.024677500000000005
+        },
+        {
+          "brand_name": "5.11 Tactical",
+          "prompt_tokens": 1107,
+          "completion_tokens": 152,
+          "total_tokens": 1259,
+          "cost": 0.016287499999999996
+        },
+        {
+          "brand_name": "Aclim8",
+          "prompt_tokens": 1947,
+          "completion_tokens": 136,
+          "total_tokens": 2083,
+          "cost": 0.0262275
+        },
+        {
+          "brand_name": "Acta Non Verba Knives",
+          "prompt_tokens": 1501,
+          "completion_tokens": 147,
+          "total_tokens": 1648,
+          "cost": 0.025222499999999995
+        },
+        {
+          "brand_name": "Actilam",
+          "prompt_tokens": 1884,
+          "completion_tokens": 160,
+          "total_tokens": 2044,
+          "cost": 0.026310000000000014
+        },
+        {
+          "brand_name": "AGA Campolin",
+          "prompt_tokens": 1095,
+          "completion_tokens": 141,
+          "total_tokens": 1236,
+          "cost": 0.020147499999999985
+        },
+        {
+          "brand_name": "Aiorosu Knives",
+          "prompt_tokens": 8370,
+          "completion_tokens": 140,
+          "total_tokens": 8510,
+          "cost": 0.042325
+        },
+        {
+          "brand_name": "AKC",
+          "prompt_tokens": 1916,
+          "completion_tokens": 153,
+          "total_tokens": 2069,
+          "cost": 0.02632000000000001
+        },
+        {
+          "brand_name": "Al Mar Knives",
+          "prompt_tokens": 3351,
+          "completion_tokens": 154,
+          "total_tokens": 3505,
+          "cost": 0.029917499999999986
+        }
+      ]
+    }
+  },
+  "results": [
+    {
+      "brand_name": "ABKT",
+      "website_url": "https://abkt.com/",
+      "description": "American Buffalo Knife & Tool (ABKT) is a brand known for producing high-quality knives and tools designed for everyday use. They offer a range of products including folding knives, fixed blades, and accessories.",
+      "additional_info": {
+        "founded": null,
+        "location": "United States",
+        "specialties": "One-handed opening knives, ball bearing assisted openers"
+      },
+      "search_confidence": "high",
+      "notes": "The website appears to be the official site for American Buffalo Knife & Tool, providing product categories and warranty information.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:53:44.597Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"ABKT\",\n    \"website_url\": \"https://abkt.com/\",\n    \"description\": \"American Buffalo Knife & Tool (ABKT) is a brand known for producing high-quality knives and tools designed for everyday use. They offer a range of products including folding knives, fixed blades, and accessories.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"United States\",\n        \"specialties\": \"One-handed opening knives, ball bearing assisted openers\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The website appears to be the official site for American Buffalo Knife & Tool, providing product categories and warranty information.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1612,
+        "completion_tokens": 149,
+        "total_tokens": 1761,
+        "cost": 0.02552
+      }
+    },
+    {
+      "brand_name": "5ive Star Gear",
+      "website_url": "https://www.5ivestargear.com/",
+      "description": "5ive Star Gear is a brand that provides a wide range of tactical and outdoor gear, including knives and survival equipment.",
+      "additional_info": {
+        "founded": "1950",
+        "location": "United States",
+        "specialties": "Tactical gear, survival equipment, and outdoor accessories"
+      },
+      "search_confidence": "high",
+      "notes": "5ive Star Gear is a part of ATLANCO, a company known for supplying military and law enforcement equipment.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:53:49.266Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"5ive Star Gear\",\n    \"website_url\": \"https://www.5ivestargear.com/\",\n    \"description\": \"5ive Star Gear is a brand that provides a wide range of tactical and outdoor gear, including knives and survival equipment.\",\n    \"additional_info\": {\n        \"founded\": \"1950\",\n        \"location\": \"United States\",\n        \"specialties\": \"Tactical gear, survival equipment, and outdoor accessories\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"5ive Star Gear is a part of ATLANCO, a company known for supplying military and law enforcement equipment.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1303,
+        "completion_tokens": 142,
+        "total_tokens": 1445,
+        "cost": 0.024677500000000005
+      }
+    },
+    {
+      "brand_name": "5.11 Tactical",
+      "website_url": "https://www.511tactical.com/",
+      "description": "5.11 Tactical is a brand known for producing high-quality tactical gear, clothing, and accessories, including knives and blades, designed for law enforcement, military, and outdoor enthusiasts.",
+      "additional_info": {
+        "founded": "2003",
+        "location": "United States",
+        "specialties": "Tactical gear, clothing, knives, and accessories"
+      },
+      "search_confidence": "high",
+      "notes": "The website is confirmed as the official site for 5.11 Tactical, which includes their knife and blade products.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:53:54.524Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"5.11 Tactical\",\n    \"website_url\": \"https://www.511tactical.com/\",\n    \"description\": \"5.11 Tactical is a brand known for producing high-quality tactical gear, clothing, and accessories, including knives and blades, designed for law enforcement, military, and outdoor enthusiasts.\",\n    \"additional_info\": {\n        \"founded\": \"2003\",\n        \"location\": \"United States\",\n        \"specialties\": \"Tactical gear, clothing, knives, and accessories\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The website is confirmed as the official site for 5.11 Tactical, which includes their knife and blade products.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1107,
+        "completion_tokens": 152,
+        "total_tokens": 1259,
+        "cost": 0.016287499999999996
+      }
+    },
+    {
+      "brand_name": "Aclim8",
+      "website_url": "https://aclim8.com/",
+      "description": "Aclim8 is a brand known for creating innovative multi-tools designed for outdoor adventurers. Their products combine multiple functionalities into compact, durable tools suitable for survival and outdoor activities.",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": "Multi-tools for outdoor and survival use"
+      },
+      "search_confidence": "high",
+      "notes": "The official website was verified through multiple sources, including product listings and descriptions on reseller sites.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:02.912Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Aclim8\",\n    \"website_url\": \"https://aclim8.com/\",\n    \"description\": \"Aclim8 is a brand known for creating innovative multi-tools designed for outdoor adventurers. Their products combine multiple functionalities into compact, durable tools suitable for survival and outdoor activities.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": null,\n        \"specialties\": \"Multi-tools for outdoor and survival use\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The official website was verified through multiple sources, including product listings and descriptions on reseller sites.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1947,
+        "completion_tokens": 136,
+        "total_tokens": 2083,
+        "cost": 0.0262275
+      }
+    },
+    {
+      "brand_name": "Acta Non Verba Knives",
+      "website_url": "https://www.anvknives.com/",
+      "description": "Acta Non Verba Knives is a brand known for producing high-quality knives with a focus on precision and durability.",
+      "additional_info": {
+        "founded": null,
+        "location": "Czech Republic",
+        "specialties": "High-quality knives for various uses, including military and outdoor applications"
+      },
+      "search_confidence": "high",
+      "notes": "The website appears to be the official site for Acta Non Verba Knives, providing detailed information about their products and company.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:07.932Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Acta Non Verba Knives\",\n    \"website_url\": \"https://www.anvknives.com/\",\n    \"description\": \"Acta Non Verba Knives is a brand known for producing high-quality knives with a focus on precision and durability.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"Czech Republic\",\n        \"specialties\": \"High-quality knives for various uses, including military and outdoor applications\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The website appears to be the official site for Acta Non Verba Knives, providing detailed information about their products and company.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1501,
+        "completion_tokens": 147,
+        "total_tokens": 1648,
+        "cost": 0.025222499999999995
+      }
+    },
+    {
+      "brand_name": "Actilam",
+      "website_url": null,
+      "description": "Actilam is a brand known for producing high-quality folding knives, often featuring unique designs and materials.",
+      "additional_info": {
+        "founded": null,
+        "location": "France",
+        "specialties": "Folding knives with innovative locking mechanisms and premium materials"
+      },
+      "search_confidence": "low",
+      "notes": "An official website for Actilam could not be found. The brand is mentioned on various reseller sites like [knifeworks.com](https://knifeworks.com) and [bladehq.com](https://www.bladehq.com), but no direct official site was identified.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:14.438Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Actilam\",\n    \"website_url\": null,\n    \"description\": \"Actilam is a brand known for producing high-quality folding knives, often featuring unique designs and materials.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"France\",\n        \"specialties\": \"Folding knives with innovative locking mechanisms and premium materials\"\n    },\n    \"search_confidence\": \"low\",\n    \"notes\": \"An official website for Actilam could not be found. The brand is mentioned on various reseller sites like [knifeworks.com](https://knifeworks.com) and [bladehq.com](https://www.bladehq.com), but no direct official site was identified.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1884,
+        "completion_tokens": 160,
+        "total_tokens": 2044,
+        "cost": 0.026310000000000014
+      }
+    },
+    {
+      "brand_name": "AGA Campolin",
+      "website_url": "https://agacampolin.com",
+      "description": "AGA Campolin is a renowned Italian brand known for its high-quality switchblade knives, rooted in the rich artisan tradition of Maniago, Italy.",
+      "additional_info": {
+        "founded": null,
+        "location": "Italy",
+        "specialties": "Switchblade knives and artisan knife craftsmanship"
+      },
+      "search_confidence": "high",
+      "notes": "The website appears to be the official site for AGA Campolin, providing detailed information about their knife collections and the brand's heritage.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:21.365Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"AGA Campolin\",\n    \"website_url\": \"https://agacampolin.com\",\n    \"description\": \"AGA Campolin is a renowned Italian brand known for its high-quality switchblade knives, rooted in the rich artisan tradition of Maniago, Italy.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"Italy\",\n        \"specialties\": \"Switchblade knives and artisan knife craftsmanship\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The website appears to be the official site for AGA Campolin, providing detailed information about their knife collections and the brand's heritage.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1095,
+        "completion_tokens": 141,
+        "total_tokens": 1236,
+        "cost": 0.020147499999999985
+      }
+    },
+    {
+      "brand_name": "Aiorosu Knives",
+      "website_url": null,
+      "description": "Aiorosu Knives is a brand known for producing manual folding knives.",
+      "additional_info": {
+        "founded": null,
+        "location": null,
+        "specialties": "manual folding knives"
+      },
+      "search_confidence": "low",
+      "notes": "No official website was found for Aiorosu Knives. The information available is from reseller sites like [bladehq.com](https://www.bladehq.com/cat--Aiorosu-Knives--3130), which list their products.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:27.471Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Aiorosu Knives\",\n    \"website_url\": null,\n    \"description\": \"Aiorosu Knives is a brand known for producing manual folding knives.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": null,\n        \"specialties\": \"manual folding knives\"\n    },\n    \"search_confidence\": \"low\",\n    \"notes\": \"No official website was found for Aiorosu Knives. The information available is from reseller sites like [bladehq.com](https://www.bladehq.com/cat--Aiorosu-Knives--3130), which list their products.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 8370,
+        "completion_tokens": 140,
+        "total_tokens": 8510,
+        "cost": 0.042325
+      }
+    },
+    {
+      "brand_name": "AKC",
+      "website_url": "https://www.akc.it/",
+      "description": "AKC, or Automatic Knives Creations, is a brand known for producing high-quality automatic knives, including Italian stilettos and OTF (Out The Front) knives.",
+      "additional_info": {
+        "founded": null,
+        "location": "Italy",
+        "specialties": "Automatic knives, Italian stilettos, OTF knives"
+      },
+      "search_confidence": "high",
+      "notes": "The website appears to be the official site for AKC, as it is dedicated to showcasing their knife creations and includes a detailed catalog of their products.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:32.659Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"AKC\",\n    \"website_url\": \"https://www.akc.it/\",\n    \"description\": \"AKC, or Automatic Knives Creations, is a brand known for producing high-quality automatic knives, including Italian stilettos and OTF (Out The Front) knives.\",\n    \"additional_info\": {\n        \"founded\": null,\n        \"location\": \"Italy\",\n        \"specialties\": \"Automatic knives, Italian stilettos, OTF knives\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The website appears to be the official site for AKC, as it is dedicated to showcasing their knife creations and includes a detailed catalog of their products.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 1916,
+        "completion_tokens": 153,
+        "total_tokens": 2069,
+        "cost": 0.02632000000000001
+      }
+    },
+    {
+      "brand_name": "Al Mar Knives",
+      "website_url": "https://www.almarknives.com/",
+      "description": "Al Mar Knives is a renowned brand known for producing high-quality knives with a focus on craftsmanship and design. The brand offers a range of knives including folding and fixed blades, often used by outdoor enthusiasts and collectors.",
+      "additional_info": {
+        "founded": "1979",
+        "location": "USA",
+        "specialties": "High-quality folding and fixed blade knives"
+      },
+      "search_confidence": "high",
+      "notes": "The website appears to be the official site for Al Mar Knives, providing detailed product listings and company information.",
+      "model_used": "gpt-4o",
+      "timestamp": "2025-05-25T22:54:38.736Z",
+      "raw_response": "```json\n{\n    \"brand_name\": \"Al Mar Knives\",\n    \"website_url\": \"https://www.almarknives.com/\",\n    \"description\": \"Al Mar Knives is a renowned brand known for producing high-quality knives with a focus on craftsmanship and design. The brand offers a range of knives including folding and fixed blades, often used by outdoor enthusiasts and collectors.\",\n    \"additional_info\": {\n        \"founded\": \"1979\",\n        \"location\": \"USA\",\n        \"specialties\": \"High-quality folding and fixed blade knives\"\n    },\n    \"search_confidence\": \"high\",\n    \"notes\": \"The website appears to be the official site for Al Mar Knives, providing detailed product listings and company information.\"\n}\n```",
+      "error_type": null,
+      "success": true,
+      "token_usage": {
+        "prompt_tokens": 3351,
+        "completion_tokens": 154,
+        "total_tokens": 3505,
+        "cost": 0.029917499999999986
+      }
+    }
+  ]
+}
